@@ -5,8 +5,8 @@ export default function BCard({
   name = "Vicente Lermanda",
   description = "Software Engineer | CS MSc Student @ PUC",
   socialLinks = { 
-    linkedin: "#",
-    github: "#",
+    linkedin: "https://www.linkedin.com/in/vicente-lermanda-candia-18a779218/",
+    github: "https://github.com/vlermandac",
     mail: "mailto:vicente@vlermanda.com"
   }
 }) {
@@ -27,15 +27,20 @@ export default function BCard({
 
       <div className="content relative z-10 px-6 py-10">
         <h2 className="name mb-1 text-3xl font-bold">{name}</h2>
-        <p className="description mb-4 px-2 text-gray-300">{description}</p>
+        <p className="description mb-8 px-2 text-gray-300">{description}</p>
 
-        <h2 className="name px-2 mb-1 text-xl font-bold">Currently working on</h2>
-        <ul className="list-disc list-inside text-gray-300">
-          <li>Building a new website</li>
-          <li>Writing a blog post</li>
+        <h2 className="name px-2 mt-1 text-xl font-bold">What do I do (mainly)</h2>
+        <p className="description mb-2 px-2 text-gray-300">Web development, Data Analysis and MLops, Academic Research.</p>
+
+        <h2 className="name px-2 mt-4 text-xl font-bold">Currently working on</h2>
+        <ul className="list-disc list-inside mb-2 ">
+          <li><a href="https://nuestramemoria.ing.uc.cl/" className="text-[#eebebe]">Nuestra MemorIA</a></li>
+          <li><a href="https://ubicate.osuc.dev/" className="text-[#eebebe]">UbiCate</a></li>
         </ul>
-
-        <div className="social-links justify-center flex space-x-8 mt-4">
+        <h2 className="name px-2 mt-4 text-xl font-bold">Research Interests</h2>
+        <p className="description mb-4 px-2 text-gray-300">Graph Theory, Natural Language Processing, Graph Neural Networks, Algorithms and Data Structures, Model Expressiveness and Complexity Theory. </p>
+        
+        <div className="social-links justify-center flex space-x-8 mt-10">
           {socialLinks.linkedin && (
             <a href={socialLinks.linkedin} className="text-gray-400 hover:text-white transition-colors" aria-label="Linkedin">
               <Linkedin size={18} />

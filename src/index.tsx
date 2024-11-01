@@ -15,7 +15,6 @@ const Index = () => {
       <body>
         <div id="root">
           <App />
-          <h1>Hello, Lume with Tailwind!</h1>
         </div>
       </body>
     </html>
